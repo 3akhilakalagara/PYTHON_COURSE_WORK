@@ -58,9 +58,8 @@ Access Denied
 """
 
 #6. REMOVE DUPLICATES FROM SET(SET OPERATIONS)
-names = input("Enter names:")
-unique = set(map(str.strip, names.split(',')))
-print(sorted(unique))
+n=set(input().split(","))
+print(sorted(n))
 
 """
 Enter names:bmw,audi,benz,innova,jaguar,benz,porsche,audi
@@ -68,12 +67,34 @@ Enter names:bmw,audi,benz,innova,jaguar,benz,porsche,audi
 """
 
 #7. STUDNET MARKS RECORD (DICTIONARY OPERATIONS)
-q = int(input("Enter number of students: "))
-stds = input("Enter student name and marks: ").split(" ")
-dict_ = dict(zip(stds[0::2], map(int, stds[1::2])))
-maximum = max(dict_, key=dict_.get)
-print(maximum)
+n=int(input("Enter number of students: "))
+data ={}
+max_val = 0
+res =""
+for i in range(n):
+    name,marks=input().split()
+    marks=int(marks)
+    if marks>max_val:
+        res=name
+    data[name] = marks
+print(data)
+print(res)
 
+#8. REVERSE MY WORDS(STRING SLICING)
+y=input("Enter a str:").split()
+for i in y:
+    print(i[::-1], end=" ")
 
+#9. CLEAN MY LIST(LIST AND TYPE CONVERSION)
+o=input()
+o=o.replace("0","")
+print(o.split())
 
-    
+#10. FREQUENCY COUNTER
+g=input("Enter a string:")
+r={}
+for i in g:
+    if i not in r and i != " ":
+        r[i] = g.count(i)
+print(r)
+
