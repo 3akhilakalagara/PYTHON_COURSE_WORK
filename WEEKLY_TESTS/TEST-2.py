@@ -81,11 +81,11 @@ while True:
     print("1.monthly-5002.quaterly-13003.yeraly-5000")
     choice = int(input())
     people = int(input())
-    if ch==1:
+    if choice==1:
           print(people*500)
-    elif ch==2:
+    elif choice==2:
         print(people*1300)
-    elif ch==3:
+    elif choice==3:
         print(people*5000)
     elif choice==0:
         break
