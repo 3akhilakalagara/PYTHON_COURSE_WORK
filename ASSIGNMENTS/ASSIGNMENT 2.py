@@ -1,4 +1,4 @@
-#WHATS'APP CHAT DATA ANALYSIS
+#WHAT'S APP CHAT DATA ANALYSIS
 
 n = int(input("Enter number of messages: "))
 chat = {}
