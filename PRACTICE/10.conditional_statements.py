@@ -241,9 +241,9 @@ a is not in uppercase
 #20.Check if string is in lowercase
 temp = int(input("Enter a temp:"))
 if temp>30:
-  print("it's hot")
+  print("it is hot")
 else:
-  print("it's not hot")
+  print("it is not hot")
 
 """
 Enter a temp:98
