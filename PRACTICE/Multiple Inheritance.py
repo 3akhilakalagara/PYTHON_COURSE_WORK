@@ -1,4 +1,4 @@
-#(many TO one) HIERARCHIAL  INHERITANCE
+#(many TO one) & (many to many) HIERARCHIAL INHERITANCE
 class Status:
     def uploadImage(self,imageurl):
         self.image = imageurl

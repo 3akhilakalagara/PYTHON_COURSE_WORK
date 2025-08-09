@@ -1,3 +1,4 @@
+#SINGLE INHERITANCE
 class Status:
     def uploadImage(self,imageurl):
         self.image = imageurl

@@ -1,3 +1,5 @@
+#method overriding
+
 class normalUser:
     def playvideo(self,name):
         print(f"{name} is playing the video with:\n1.Normal Quality\n2.Ads run\n3.No bckg play\n4.limited downloads\n5.music with ads\n")
