@@ -41,6 +41,56 @@ def w(text):
 text = input()
 print(w(text))
 
+#6
+'''
+[1,2,3,1,2,3,1,2,4,5,3,7]=> 4
+[]
+[1]
+[2,1]
+[3,2,1]
+[1,3,2]
+[2,1,3]
+[3,2,1]
+[1,3,2]
+[2,1,3]
+[4,2,1,3]
+[5,4,2,1]
+[3,5,4,2]
+[7,3,5,4]
+'''
+
+def lru_cache(request,size):
+  cache=[]
+  for i in request:
+    if i in cache:
+      cache.remove(i)
+      cache.insert(0,i)
+    else:
+      if len(cache)<size:
+        cache.insert(0,i)
+      else:
+        cache.pop()
+        cache.insert(0,i)
+
+  print(cache)
+
+
+lru_cache([1,2,3,1,2,3,1,2,4,5,3,7],4)
+lru_cache([1,2,3,2,4,1],3)
+lru_cache([5,6,7,8],2)
+lru_cache([1,2,3,1],2)
+
+#7 
+def flatten_matrix(matrix):
+  flattened=[]
+  for i in matrix:
+    flattened.extend(i)
+  print(flattened)
+
+
+flatten_matrix([[1, 2], [3, 4]])
+flatten_matrix([[5], [6, 7], [8]])
+
 #8
 def m(fn,ln,d):
   f=fn.lower()

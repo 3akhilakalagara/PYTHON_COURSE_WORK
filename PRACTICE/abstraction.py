@@ -1,4 +1,4 @@
-#abstract method should be used in all the childs
+#abstract method should be used in all the childs but in polymorphism that is not necessary
 
 from abc import ABC, abstractmethod
 
